@@ -1,7 +1,7 @@
 <?php
-    class Repeat
+    class RepeatCounter
     {
-        function countRepeat($input_word, $input_string)
+        function countRepeats($input_word, $input_string)
         {
             //Convert word and string to lower-case.
             $lc_word = strtolower($input_word);

@@ -1,0 +1,37 @@
+Interface: User completes form by providing a word and a string of words and submitting. User is then taken a results page that provides a count of how many times the given word appears in the given string.
+
+1.  Behavior: Single letter word, single letter string, matching.
+    Input:  'a', 'a'
+    Output: 1
+
+2.  Behavior: Single letter word, single letter string, not matching.
+    Input: 'a', 'b'
+    Output: 0
+
+3.  Behavior: Word with multiple letters, one word string, matching.
+    Input: 'and', 'and'
+    Output: 1
+
+4.  Behavior: Word with multiple letters, one word string, not matching.
+    Input: 'and', 'but'
+    Output: 0
+
+5.  Behavior: Word with multiple letters, multiple word string, one match.
+    Input: 'and', 'cats and dogs'
+    Output: 1
+
+6.  Behavior: Word with multiple letters, multiple word string, no matches.
+    Input: 'and', 'cats or dogs'
+    Output: 0
+
+7.  Behavior: Word with multiple letters, multiple word string, multiple matches.
+    Input: 'and', 'cats and dogs and elephants'
+    Output: 2
+
+8.  Behavior: Word with multiple letters, multiple word string, no matches.
+    Input: 'and', 'cats or dogs or elephants'
+    Output: 0
+
+9.  Behavior: Word or string with punctuation, matches. (Prevents inaccurate output from strings that are complete sentences.)
+    Input: 'dogs' 'cats and dogs.'
+    Output: 1

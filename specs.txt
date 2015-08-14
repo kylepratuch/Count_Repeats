@@ -33,5 +33,5 @@ Interface: User completes form by providing a word and a string of words and sub
     Output: 0
 
 9.  Behavior: Word or string with punctuation, matches. (Prevents inaccurate output from strings that are complete sentences.)
-    Input: 'dogs' 'cats and dogs.'
+    Input: 'dogs', 'I like cats and dogs.'
     Output: 1

@@ -13,6 +13,7 @@
             //Begin counting matches.
             $matches = 0;
 
+            //Loop through exploded string to check for matches. Add to match count if found.
             foreach ($exp_string as $exp_word) {
                 if ($lc_word == $exp_word) {
                     $matches += 1;

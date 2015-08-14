@@ -62,5 +62,16 @@
 
             $this->assertEquals(1, $result);
         }
+
+        function test_countRepeat_multiWord_noMatch()
+        {
+            $test_Repeat = new Repeat;
+            $input1 = 'and';
+            $input2 = 'cats or dogs';
+
+            $result = $test_Repeat->countRepeat($input1, $input2);
+
+            $this->assertEquals(0, $result);
+        }
     }
  ?>

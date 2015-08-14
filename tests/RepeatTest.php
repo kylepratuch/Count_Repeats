@@ -26,5 +26,17 @@
 
             $this->assertEquals(0, $result);
         }
+
+        //Spec 3: Count repeats in multi letter word/string (matching).
+        function test_countRepeat_multiLetter()
+        {
+            $test_Repeat = new Repeat;
+            $input1 = 'and';
+            $input2 = 'and';
+
+            $result = $test_Repeat->countRepeat($input1, $input2);
+
+            $this->assertEquals(1, $result);
+        }
     }
  ?>

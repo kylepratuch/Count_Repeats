@@ -16,7 +16,7 @@
             foreach ($split_string as $words) {
                 if ($lc_word == $lc_string) {
                     $matches += 1;
-                }
+                } 
             }
 
             return $matches;

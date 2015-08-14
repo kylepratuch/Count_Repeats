@@ -1,15 +1,22 @@
 <html>
     <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
         <title>Count Repeats</title>
     </head>
     <body>
-        <h2>How often does your word appear in your phrase?</h2>
-        <form action='/results'>
-            <label for='word'>Your word:</label>
-            <input id='word' name='word' type='text'>
-            <label for='string'>Your phrase:</label>
-            <input id='string' name='string' type='text'>
-            <button type='submit'>Count it!</button>
-        </form>
+        <div class='container'>
+            <h2>How often does your word appear in your phrase?</h2>
+            <form action='/results'>
+                <div class='form-group'>
+                    <label for='word'>Your word:</label>
+                    <input id='word' name='word' type='text' class='form-control'>
+                </div><br>
+                <div class='form-group'>
+                    <label for='string'>Your phrase:</label>
+                    <input id='string' name='string' type='text' class='form-control'>
+                </div>
+                    <button type='submit' class='btn btn-primary'>Count it!</button>
+            </form>
+        </div>
     </body>
 </html>

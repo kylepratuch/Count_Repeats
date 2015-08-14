@@ -1,9 +1,12 @@
 <html>
     <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
         <title>Counted</title>
     </head>
     <body>
-        <h2>The word '{{ word }}' appears {{ repeats }} time(s) in the phrase '{{ string }}.'
-        <a href='/'><button type='button'>Count again!</button></a>
+        <div class='container'>
+            <h2>The word '{{ word }}' appears {{ repeats }} time(s) in the phrase '{{ string }}'</h2>
+            <a href='/'><button type='button' class='btn btn-primary'>Count again!</button></a>
+        </div>
     </body>
 </html>

@@ -86,5 +86,17 @@
 
             $this->assertEquals(2, $result);
         }
+
+        //Spec 8: Count repeats in multi letter word, multi word string (non-matching).
+        function test_countRepeat_multiWord_noMultiMatch()
+        {
+            $test_Repeat = new Repeat;
+            $input1 = 'and';
+            $input2 = 'cats or dogs or elephants';
+
+            $result = $test_Repeat->countRepeat($input1, $input2);
+
+            $this->assertEquals(0, $result);
+        }
     }
  ?>

@@ -10,10 +10,10 @@ _Count repeats allows users to count the number of times a given word is repeate
 
 ## Setup
 
- _1. Clone this repository: run command 'git clone https://github.com/radradish/Count_Repeats.git' then change directory to top level of project folder.
+ 1. Clone this repository: run command 'git clone https://github.com/radradish/Count_Repeats.git' then change directory to top level of project folder.
  2. Install composer: run command 'composer install' to download vendor files for Silex, Twig, and PHPUnit (if you wish to run the included tests).
  3. Start your server in the 'web' folder: to use PHP's built-in server, run command 'php -S localhost:8000'
- 4. View the app: in your browser, navigate to the home page at the root address. If running a server as described above, go to 'http://localhost:8000'._
+ 4. View the app: in your browser, navigate to the home page at the root address. If running a server as described above, go to 'http://localhost:8000'.
 
 ## Technologies Used
 

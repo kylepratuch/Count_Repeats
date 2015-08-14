@@ -98,5 +98,17 @@
 
             $this->assertEquals(0, $result);
         }
+
+        //Spec 9: Ignore sentence punctuation when counting matches.
+        function test_countRepeat_ignorePunctuation()
+        {
+            $test_Repeat = new Repeat;
+            $input1 = 'dogs';
+            $input2 = 'I like cats and dogs.';
+
+            $result = $test_Repeat->countRepeat($input1, $input2);
+
+            $this->assertEquals(1, $result);
+        }
     }
  ?>
